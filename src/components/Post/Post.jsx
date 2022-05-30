@@ -23,7 +23,7 @@ function Post() {
         resolver: yupResolver(validationPost)
     })
 
-    const addPost  = data => axios.post("http://api-bookstore-resilia.herokuapp.com/books", data)
+    const addPost  = data => axios.post("https://api-bookstore-resilia.herokuapp.com/books", data)
     .then(() => {
         console.log("Deu tudo certo")
        

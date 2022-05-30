@@ -10,7 +10,7 @@ export function Card(){
 let [ books, setBooks] = useState([])
 
     useEffect(() => {
-      axios.get("http://api-bookstore-resilia.herokuapp.com/books")  
+      axios.get("https://api-bookstore-resilia.herokuapp.com/books")  
       .then((response) => {
           setBooks(response.data.books)
         console.log(response)
