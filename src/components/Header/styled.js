@@ -11,6 +11,7 @@ h3{
     font-size:32px;
     color:white;
     
+    
 }
 
 ul{
@@ -22,8 +23,25 @@ ul{
 
         li{
             padding:12px;
-            font-weight:300;
+            font-size:27px;
+        font-weight:bolder;
         }
+
+    .link{
+        text-decoration:none;
+        color:white;
+        
+    }
+
+    .link:hover{
+        transition: 0.2s;
+        color:#73ED00;
+    }
+
+    .link h3{
+        text-decoration:none;
+    }
+
 
 }
 

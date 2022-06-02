@@ -6,7 +6,6 @@ import * as yup from "yup";
 import { FormStyle } from './styled';
 
 
-
 const validationPost = yup.object().shape({
     title: yup.string().required("This is a required field").max(40, "This field must have less than 40 characters."),
     language: yup.string().required("This is a required field").max(40, "This field must have less than 40 characters."),
@@ -25,7 +24,7 @@ function Post() {
 
     const addPost  = data => axios.post("https://api-bookstore-resilia.herokuapp.com/books", data)
     .then(() => {
-        console.log("Deu tudo certo")
+        alert("Book Added!")
        
     })
     .catch(() => {
@@ -57,9 +56,9 @@ function Post() {
                                 <input type="text" name="title" {...register("title")} />
                                 <p className="error-message">{errors.title?.message}</p>
                             </div>
-                            <div className="fields" >
+                            <div className="fieldsOff" >
                                 <label>Author ID</label>
-                                <input type="text" name="author_id" {...register("author_id")} />
+                                <input type="text" value="sample" name="author_id" {...register("author_id")} />
                                 <p className="error-message">{errors.title?.message}</p>
                             </div>
                             <div className="fields" >
@@ -73,7 +72,7 @@ function Post() {
                                 <input type="number" name="num_pages" {...register("num_pages")} ></input>
                                 <p className="error-message">{errors.num_pages?.message}</p>
                             </div>
-                            <div className="fields" >
+                            <div className="fieldsOff" >
                                 <label>Pub Date</label>
                                 <input type="text" name="publication_date" value="2022-12-12T00:00:00.000Z" {...register("publication_date")} ></input>
                                 <p className="error-message">{errors.publication_date?.message}</p>
@@ -86,7 +85,10 @@ function Post() {
                             
 
                             <div className="btn-post" >
+                                
                                 <button type="submit">Enviar</button>
+                                
+                                
                             </div>
 
                         </form>

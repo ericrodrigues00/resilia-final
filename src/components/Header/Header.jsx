@@ -1,14 +1,29 @@
 import { HeaderBg } from "./styled";
-
+import { Link } from "react-router-dom";
 export function Navbar(){
     return(
         <HeaderBg>
-            <h3>
-                alexandria
-            </h3>
+            
+                     <h3>
+                        alexandria
+                    </h3>
+     
+                    
+
             <ul>
-                <li>Books</li>
-                <li>Add</li>
+
+
+                <Link className="link" to="/">
+                    <li>Home</li>
+                </Link>
+
+                <Link className="link" to="/books">
+                    <li>Books</li>
+                </Link>
+                <Link className="link" to="/post">
+                    <li>Add</li>
+                </Link>
+                
             </ul>
         </HeaderBg>
     )

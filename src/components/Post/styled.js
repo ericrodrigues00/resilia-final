@@ -42,6 +42,10 @@ main {
     margin-bottom: 20px;
 }
 
+.fieldsOff{
+    display:none;
+}
+
 label {
     display: block;
     margin-bottom: 7px;
