@@ -44,7 +44,7 @@ function Post() {
 
                 <div className="card-post" >
 
-                    <h1>Criar postagem</h1>
+                    <h1>Add Book</h1>
                     <div className="line-post" ></div>
 
                     <div className="card-body-post" >
@@ -86,7 +86,7 @@ function Post() {
 
                             <div className="btn-post" >
                                 
-                                <button type="submit">Enviar</button>
+                                <button type="submit">Send</button>
                                 
                                 
                             </div>
